@@ -8,13 +8,9 @@
 
 
 void* fun(void *arg){
-    if ( fork() ){
-        printf("Thread \n");
-    }
-    else
-        printf("Fork \n");
-
-    printf("Koniec Funkcji \n");
+    execl("../Pthread_Forks/prog",NULL);
+    exit(666);
+    printf("Koniec Funkcji2 \n");
     return 0;
 }
 
